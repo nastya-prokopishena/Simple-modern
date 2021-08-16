@@ -1,0 +1,154 @@
+.gallery{
+    background: white;
+    &__container {
+        max-width: 1600px;
+        width: 100%;
+        min-height: 1000px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    &__title {
+        text-align: center;
+        font-family: 'Gotham_bold';
+        font-size: 44px;
+        color: #2C4058;
+        margin-top: 35px;
+        margin-bottom: 100px;
+    }
+    &__line {
+        content: '';
+        border-bottom: 1px solid #2C4058;
+        width: 100px;
+        height: 1px;
+        padding-top: 140px;
+        margin: 0 auto ;
+    }
+    &__box {
+        display: flex;
+        justify-content: center;
+        margin-top: -700px;
+    }
+    &__img-one{
+        max-width: 540px;
+        width: 100%;
+        min-height: 438px;
+    }
+    &__box-container{
+        display: flex;
+    }
+    &__box-one{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 10px;    
+    }
+    &__img-two {
+        max-width: 285px;
+        width: 100%;
+        max-height: 214px;
+    }
+    &__img-three {
+        max-width: 285px;
+        width: 100%;
+        max-height: 214px;
+    }
+    &__box-two{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 10px;
+    }
+    &__img-four {
+        max-width: 285px;
+        width: 100%;
+        max-height: 214px;
+    }
+    &__img-five {
+        max-width: 285px;
+        width: 100%;
+        max-height: 214px;
+    }
+    &__button {
+        margin-top: 60px;
+        margin-bottom: 140px;
+        background-color: white;
+        max-width: 190px;
+        width: 100%;
+        min-height: 50px;
+        border: 1px solid #2C4058;
+        font-family: 'Gotham-Book';
+        font-size: 14px;
+        color: #2C4058;
+        cursor: pointer;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin-top: 60px;
+        margin-bottom: 140px;
+
+    }
+    &__button:hover{
+        font-weight: bold;
+        border: 2px solid #2C4058;
+        transition: 500ms;
+    }
+    &__button:active {
+        background-color:#2C4058 ;
+        color: white;
+    }
+}
+@media screen and (max-width: 1170px) {
+    .gallery {
+        &__title {
+            margin-bottom: 35px;
+        }
+        &__box {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__box-one {
+            margin-left: 0;
+        }
+        &__img-one {
+            max-width: 580px;
+            min-height: 0;
+            max-height: 438px;
+        }
+        &__img-two {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        &__img-four {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .gallery {
+        &__line {
+            margin-top: -50px;
+        }
+        &__box {
+            margin-top: -780px;
+        }
+        &__button {
+            margin-top: 20px;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .gallery {
+        &__box {
+            max-width: 590px;
+            width: 100%;
+        }
+        &__box-container {
+            min-height: 0;
+        }
+        
+    }
+}

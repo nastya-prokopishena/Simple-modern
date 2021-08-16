@@ -1,0 +1,195 @@
+.projects {
+    background-color: white;
+    &__container {
+        max-width: 1600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    &__line {
+        content: '';
+        border-bottom: 2px solid #2C4058;
+        max-width: 100px;
+        width: 100%;
+        min-height: 1px;
+        padding-top: 99px;
+        margin: 0 auto ;
+    }
+    &__title {
+        text-align: center;
+        font-family: "Gotham_bold";
+        font-size: 44px;
+        color: #2C4058;
+        margin-top: 35px;
+        margin-bottom: 100px;
+    }
+    &__first {
+        display: flex;
+    }
+    &__second {
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+.first {
+    &__img {
+        max-width: 845px;
+        width: 100%;
+        max-height: 540px;
+        height: 540px;
+    }
+    &__img-wo-bg {
+        display: none;
+        /*max-width: 845px;
+        width: 100%;
+        max-height: 540px;
+        height: 100%;*/
+    }
+    &__describtion {
+        display: flex;
+        flex-direction: column;
+        margin-left: 70px;
+        margin-top: 127px;
+    }
+}
+.describtion {
+    &__subtitle {
+        font-family: 'Gotham_Book';
+        font-size: 22px;
+        color: #2C4058;
+        margin-bottom: 6px;
+    }
+    &__title {
+        font-family: "Gotham_bold";
+        font-size: 44px;
+        color: #2C4058;
+    }
+    &__text {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #2C4058;
+        max-width: 470px;
+        width: 100%;
+        line-height: 30px;
+        margin-top: 25px;
+    }
+    &__button {
+        background-color: #FFFFFF;
+        font-family: 'Gotham_Book';
+        border: 1px solid #2C4058;
+        font-size: 14px;
+        width: 190px;
+        height: 50px;
+        margin-top: 32px;
+        cursor: pointer;
+    }
+    &__button:hover{
+        font-weight: bold;
+        border: 2px solid #2C4058;
+        transition: 500ms;
+    }
+    &__button:active {
+        background-color:#2C4058 ;
+        color: white;
+    }
+    &__location {
+        font-family: 'Open Sans', sans-serif;
+        font-style: italic;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 58px;
+    }
+}
+.fa-map-marker-alt {
+    width: 20px;
+    height: 15px;
+}
+.second{
+    &__img {
+        max-width: 845px;
+        width: 100%;
+        max-height: 540px;
+        height: 540px;
+    }
+    &__img-wo-bg {
+        display: none;
+        max-width: 845px;
+        width: 100%;
+        max-height: 540px;
+        height: 100%;
+    }
+    &__describtion{
+        display: flex;
+        flex-direction: column;
+        margin-top: 120px;
+        margin-left: 120px;
+        margin-right: 70px;
+    }
+}
+@media screen and (max-width: 1330px) {
+    .projects{
+        &__first{
+            flex-direction: column;
+            align-items: center;
+        }
+        &__second{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+    }
+    .first {
+        &__img{
+            display: none;
+        }
+        &__img-wo-bg{
+            display: block;
+        }
+        &__describtion{
+            text-align: center;
+            margin: 0;
+            margin-top: 40px;
+        }
+    }
+    .second {
+        &__img{
+            display: none;
+        }
+        &__img-wo-bg{
+            display: block;
+        }
+        &__describtion{
+            text-align: center;
+            margin: 0;
+            margin-top: 40px;
+        }
+    }
+}
+.describtion{
+    &__button {
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .projects {
+        &__title {
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+    }
+    .describtion {
+        &__subtitle{
+            font-size: 16px;
+        }
+        &__title{
+            font-size: 32px;
+        }
+        &__text{
+            max-width: 420px;
+        }
+    }
+}

@@ -1,0 +1,270 @@
+.news{
+    background-image: url(/dist/images/news-bg.png);
+
+    &__container {
+        margin: 0 auto;
+        max-width: 1300px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 1035px;
+    }
+    &__title {
+        text-align: center;
+        font-family: 'Gotham_bold';
+        font-size: 44px;
+        color: #FFFFFF;
+        margin-top: 35px;
+        margin-bottom: 100px;
+    }
+
+    &__line {
+        content: '';
+        border-bottom: 2px solid #FFFFFF;
+        width: 100px;
+        height: 1px;
+        padding-top: 140px;
+        margin: 0 auto;
+    }
+    &__slider {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 514px;
+    }
+    &__post-one{
+        max-width: 370px;
+        width: 100%;
+        min-height: 514px;
+        background-color: #FFFFFF;
+        margin: 15px;
+    }
+    &__post-two{
+        max-width: 370px;
+        width: 100%;
+        min-height: 514px;
+        background-color: #FFFFFF;
+        margin: 15px;
+    }
+    &__post-three {
+        max-width: 370px;
+        width: 100%;
+        min-height: 514px;
+        background-color: #FFFFFF;
+        margin: 15px;
+    }
+}
+.post-one {
+    &__img {
+        max-width: 370px;
+        width: 100%;
+        max-height: 240px;
+        height: 100%;
+    }
+    &__title {
+        font-family: 'Gotham_bold';
+        font-size: 22px;
+        color: #2C4058;
+        line-height: 34px;
+        margin: 0 21px;
+    }
+    &__text {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #2C4058;
+        line-height: 30px;
+        margin: 0 21px;
+    }
+    &__account{
+        display: flex;
+        align-items: center;
+        margin-top: 31px;
+        margin-left: 20px;
+        margin-bottom: 30px;        
+    }
+    &__account-foto{
+        margin-right: 20px;
+    }
+    &__account-name {
+        font-family: 'Gotham_bold';
+        font-size: 22px;
+        color: #2C4058;
+    }
+    &__account-date {
+        font-family: 'Gotham_bold';
+        font-size: 14px;
+        color: #55B7FF;
+        margin-top: 9px;
+    }
+}
+.post-two {
+    &__img {
+        max-width: 370px;
+        width: 100%;
+        max-height: 240px;
+        height: 100%;
+    }
+    &__title {
+        font-family: 'Gotham_bold';
+        font-size: 22px;
+        color: #2C4058;
+        line-height: 34px;
+        margin: 0 21px;
+    }
+    &__text {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #2C4058;
+        line-height: 30px;
+        margin: 0 21px;
+    }
+    &__account{
+        display: flex;
+        align-items: center;
+        margin-top: 31px;
+        margin-left: 20px;
+        margin-bottom: 30px;        
+    }
+    &__account-foto{
+        margin-right: 20px;
+    }
+    &__account-name {
+        font-family: 'Gotham_bold';
+        font-size: 22px;
+        color: #2C4058;
+    }
+    &__account-date {
+        font-family: 'Gotham_bold';
+        font-size: 14px;
+        color: #55B7FF;
+        margin-top: 9px;
+    }
+}
+.post-three {
+    &__img {
+        max-width: 370px;
+        width: 100%;
+        max-height: 240px;
+        height: 100%;
+    }
+    &__title {
+        font-family: 'Gotham_bold';
+        font-size: 22px;
+        color: #2C4058;
+        line-height: 34px;
+        margin: 0 21px;
+    }
+    &__text {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        color: #2C4058;
+        line-height: 30px;
+        margin: 0 21px;
+    }
+    &__account{
+        display: flex;
+        align-items: center;
+        margin-top: 31px;
+        margin-left: 20px;
+        margin-bottom: 30px;        
+    }
+    &__account-foto{
+        margin-right: 20px;
+    }
+    &__account-name {
+        font-family: 'Gotham_bold';
+        font-size: 22px;
+        color: #2C4058;
+    }
+    &__account-date {
+        font-family: 'Gotham_bold';
+        font-size: 14px;
+        color: #55B7FF;
+        margin-top: 9px;
+    }
+}
+.slider {
+    min-width: 0;
+    position: relative;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.slider .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    border: 1px solid white;
+    border-radius: 45%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.slider .slick-arrow.slick-prev {
+    left: 0px;
+    background: url('../dist/images/sl-arrow_l.svg') 0 0 / 25% no-repeat;
+    background-position: center;
+}
+.slider .slick-arrow.slick-next {
+    right: 0px;
+    background: url('../dist/images/sl-arrow_r.svg') 0 0 / 25% no-repeat;
+    background-position: center;
+}
+.slider ul{
+    max-width: 1600px;
+    width: 100%;
+    max-height: 360px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+} 
+
+.slider ul.slick-dots {
+    list-style: none;
+    position: absolute;
+    margin-top: 630px;
+}
+
+.slider .slick-dots li{
+    margin-left: 35px;
+    margin-bottom: 32px;
+} 
+
+.slider .slick-dots li button:before {
+    display: none;
+}
+
+.slider .slick-dots button{
+    font-size: 0;
+    width: 5px;
+    height: 13px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: transparent;
+    display: inline-block;
+} 
+
+.slider .slick-dots button:hover{
+    background-color: white;
+    transition: 500ms;
+} 
+
+.slider .slick-dots button:focus{
+    background-color: white;
+} 
+
+.slider .slick-dots li.slick-active button {
+    background-color: snow;
+    border: 1px solid snow;
+}
+.slick-list {
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+}

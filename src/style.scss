@@ -1,0 +1,21 @@
+@font-face {
+    font-family: "Gotham_Book";
+    src: url(./fonts/GothamBook.ttf);
+}
+@font-face {
+    font-family: "Gotham_bold";
+    src: url(./fonts/gothambold1.ttf);
+}
+@font-face {
+    font-family: "Gotham_medium";
+    src: url(./fonts/GothamMedium.ttf);
+}
+
+@import "reset";
+@import "header";
+@import "projects";
+@import "news";
+@import "gallery";
+@import "map";
+@import "footer";
+@import "form";
