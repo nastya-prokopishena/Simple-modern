@@ -1,5 +1,5 @@
 .news{
-    background-image: url(/dist/images/news-bg.png);
+    background-image: url(images/news-bg.png);
 
     &__container {
         margin: 0 auto;
@@ -191,26 +191,28 @@
     position: relative;
     padding-left: 60px;
     padding-right: 60px;
+    
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 10;
+        font-size: 0;
+        border: 1px solid white;
+        border-radius: 45%;
+        width: 40px;
+        height: 40px;
+        display: inline;
+    }
 }
-.slider .slick-arrow {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    font-size: 0;
-    border: 1px solid white;
-    border-radius: 45%;
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-}
+
 .slider .slick-arrow.slick-prev {
     left: 0px;
-    background: url('../dist/images/sl-arrow_l.svg') 0 0 / 25% no-repeat;
+    background: url(images/sl-arrow_l.svg) 0 0 / 25% no-repeat;
     background-position: center;
 }
 .slider .slick-arrow.slick-next {
     right: 0px;
-    background: url('../dist/images/sl-arrow_r.svg') 0 0 / 25% no-repeat;
+    background: url(images/sl-arrow_r.svg) 0 0 / 25% no-repeat;
     background-position: center;
 }
 .slider ul{
@@ -267,4 +269,52 @@
 }
 .slick-track{
     display: flex;
+}
+@media screen and (max-width: 470px){
+    .slider {
+        padding-left: 30px;
+        width: 100%;
+        padding-right: 30px;
+        .slick-arrow {
+            display: none;
+        }
+    
+    }
+     
+}
+@media screen and (max-width: 390px){
+    .slider {
+        padding-left: 10px;
+        width: 100%;
+        padding-right: 10px;
+        
+    }
+    .slick-arrow {
+            display: none;
+        }
+        
+    
+    
+}
+@media screen and (max-width: 350px) {
+    .slider {
+        padding-left: 0px;
+        max-width: 340px;
+        width: 100%;
+        padding-right: 0px;
+        .slick-arrow {
+            display: none;
+        }
+}
+}
+@media screen and (max-width: 325px) {
+    .slider {
+        
+        max-width: 325px;
+        width: 100%;
+    }    
+        .slick-arrow {
+            display: none;
+        }
+
 }

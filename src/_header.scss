@@ -178,6 +178,7 @@
 }
 .fa-chevron-down:before{
     margin-left: 10px;
+    
 }
 
 @media screen and (max-width: 1300px){
@@ -280,6 +281,10 @@
             margin-top: 150px;
         }
     }
+    .fa-chevron-down:before{
+        margin-left: 0px;
+        
+    }
 }
 @media screen and (max-width: 750px) {
     .slider{
@@ -358,6 +363,9 @@
             position: absolute;
             margin-top: 60px;
         }
+    }
+    .fa-chevron-down{
+        margin-top: 80px;
     }
 }
 

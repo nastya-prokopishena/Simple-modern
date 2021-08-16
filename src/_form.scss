@@ -192,6 +192,16 @@
         }
     }
 }
+@media screen and (max-width: 515px) {
+    .form {
+        &__submit {
+            position: absolute;
+        }
+        &__list {
+            margin-top: 230px;
+        }
+    }
+}
 
 @media screen and (max-width: 340px){
     .form {
@@ -199,5 +209,7 @@
             font-size: 34px;
             margin-bottom: 20px;
         }
+        
+        
     }
 }
