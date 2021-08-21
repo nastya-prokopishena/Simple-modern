@@ -85,6 +85,10 @@
         height: 50px;
         margin-top: 32px;
         cursor: pointer;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0 ;
     }
     &__button:hover{
         font-weight: bold;
@@ -151,7 +155,9 @@
         }
         &__describtion{
             text-align: center;
-            margin: 0;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
             margin-top: 40px;
         }
     }
@@ -164,18 +170,21 @@
         }
         &__describtion{
             text-align: center;
-            margin: 0;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
             margin-top: 40px;
         }
     }
 }
 .describtion{
+
     &__button {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
         margin-top: 20px;
+        
     }
 }
 @media screen and (max-width: 470px) {

@@ -474,6 +474,10 @@ table {
   height: 50px;
   margin-top: 32px;
   cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 0;
 }
 .describtion__button:hover {
   font-weight: bold;
@@ -538,7 +542,9 @@ table {
   }
   .first__describtion {
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
     margin-top: 40px;
   }
 
@@ -550,7 +556,9 @@ table {
   }
   .second__describtion {
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
     margin-top: 40px;
   }
 }
@@ -558,7 +566,6 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
   margin-top: 20px;
 }
 
